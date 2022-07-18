@@ -6,6 +6,18 @@ public class Product {
 	public double price;
 	public int quantity;
 	
+	//Usando construtor
+	
+	public Product(String name, double price, int quantity) {
+		this.name = name;
+		this.price = price;
+		this.quantity = quantity;
+		
+	}
+	
+	
+	
+	
 	//Definindo os métodos
 	//operação para devolver o valor total do estoque
 	public double totalValueInStock() {
