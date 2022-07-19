@@ -18,17 +18,22 @@ public class Program {
 		String name = sc.nextLine(); //Leitura do nome do produto e ja armazena na variável name
 		System.out.print("Price: ");
 		double price = sc.nextDouble(); //Leitura do valor e armazena na variável price
-		System.out.print("Quantity in stock: ");
-		int quantity = sc.nextInt(); // Leitura da quantidade e armazena na variável quantity
+		//System.out.print("Quantity in stock: ");
+		//int quantity = sc.nextInt(); // Leitura da quantidade e armazena na variável quantity
 		
-		Product product = new Product(name, price, quantity) ; //Não esqueça de importar a classe.
+		Product product = new Product(name, price) ; //Não esqueça de importar a classe.
+		
+		product.setName("Computer");
+		System.out.println("Updated name: " + product.getName());
+		product.setPrice(1200.00);
+		System.out.println("Updated price: " + product.getPrice());
 		
 		System.out.println();
 		System.out.println("Product data: " + product);
 		
 		System.out.println();
 		System.out.println("Enter the number of products to be added in stock: ");
-		quantity = sc.nextInt();
+		int quantity = sc.nextInt();
 		product.addProducts(quantity);
 		
 		System.out.println();
