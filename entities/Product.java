@@ -1,8 +1,9 @@
 package entities;
 
 public class Product {
-	//Definindo os atributos da classe Product
-	private String name;
+	
+	//Definindo os atributos da classe Product, quando usamos o encapsulamento os atributos ficam em private e são acessador por metódos get e set.
+	String name;
 	private double price;
 	private int quantity;
 	
@@ -25,6 +26,8 @@ public class Product {
 		//this.quantity = 0  não é necessario o uso pq por paremetro essa variavel ja é inicializada com 0
 		
 	}
+	
+	//Usando getters e setters
 	
 	public void setName(String name) {
 		this.name = name;
